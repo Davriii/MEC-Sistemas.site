@@ -26,6 +26,14 @@ header .container {
   height: 80px;  /* ajuste o tamanho se quiser */
 }
 
+.ilustration{
+  height: 400px;
+  border-radius: 40px;
+  padding: 1.5rem;
+  margin: 1.5rem;
+}
+
+
 nav a {
   margin-left: 20px;
   color: rgb(14, 109, 219);
@@ -34,6 +42,15 @@ nav a {
 }
 
 nav a:hover {
+  text-decoration: underline;
+}
+
+a {
+  color: rgb(14, 109, 219);
+  text-decoration: none;
+}
+
+a:hover {
   text-decoration: underline;
 }
 
@@ -98,21 +115,7 @@ footer {
   color: #555;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-
-  /* Esconde menu normal */
-  .menu {
-      display: none;
-  }
-
-  /* Mostra menu hambúrguer */
-  .hamburger {
-      display: flex;
-  }
-}
-
-/* MENU MOBILE (ESCONDIDO) */
+/* MENU MOBILE — COMEÇA ESCONDIDO */
 .mobile-menu {
   display: none;
   flex-direction: column;
@@ -125,11 +128,39 @@ footer {
   color: white;
   text-decoration: none;
   text-align: center;
-  display: block;
 }
 
 .mobile-menu a:hover {
   background: #063776;
+}
+
+/* BOTÃO HAMBÚRGUER (DESKTOP = OCULTO) */
+.hamburger {
+  width: 30px;
+  cursor: pointer;
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.hamburger div {
+  height: 4px;
+  background-color: #0a4da3;
+  border-radius: 4px;
+}
+
+/* RESPONSIVO */
+@media (max-width: 768px) {
+
+  /* Esconde menu normal */
+  .menu {
+      display: none;
+  }
+
+  /* Exibe menu hamburguer */
+  .hamburger {
+      display: flex;
+  }
 }
 
 /* MENU MOBILE ABERTO */

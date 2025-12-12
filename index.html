@@ -10,53 +10,64 @@
 
     <header>
         <div class="container">
-
+    
             <!-- LOGO -->
-            <div class="logo-area">
+            <div class="logo">
                 <img src="LOGO MEC SISTEMAS TRANSPARENTE.png" alt="Logo da MEC Sistemas" class="logo">
             </div>
-
-            <nav>
+    
+            <!-- MENU DESKTOP -->
+            <nav class="menu">
                 <a href="#empresa">Empresa</a>
                 <a href="#produtos">Produtos</a>
                 <a href="#contato">Contato</a>
+                <a href="#endereco">Endereço</a>
             </nav>
-            
-            </div>
-            <!-- BOTÃO MENU HAMBÚRGUER (MOBILE) -->
+    
+            <!-- BOTÃO MENU HAMBÚRGUER -->
             <div class="hamburger" onclick="toggleMenu()">
                 <div></div>
                 <div></div>
                 <div></div>
             </div>
-
+    
         </div>
-
+    
         <!-- MENU MOBILE DROPDOWN -->
         <div class="mobile-menu" id="mobileMenu">
-            <a href="#empresa">Empresa</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#contato">Contato</a>
+            <a href="#empresa" onclick="toggleMenu()">Empresa</a>
+            <a href="#produtos" onclick="toggleMenu()">Produtos</a>
+            <a href="#contato" onclick="toggleMenu()">Contato</a>
+            <a href="#endereco" onclick="toggleMenu()">Endereço</a>
         </div>
     </header>
+    
     
 
     <section class="hero">
         <div class="hero-text">
-            <h2>Soluções em Softwares para Gestão Empresarial</h2>
+            <h2>Atendendo empreendedores há mais de 20 anos!</h2>
             <p>Oferecendo sistemas práticos, modernos e eficientes para apoiar seu negócio.</p>
             <a href="#contato" class="btn">Entrar em Contato</a>
         </div>
     </section>
 
     <section id="empresa" class="section">
+        <div>
+            <img src="pexels-olly-927022.jpg" alt="" class="ilustration">
+        </div>
         <h3>Sobre a Empresa</h3>
-        <p>A MEC Sistemas oferece softwares voltados para rotinas contábeis e gestão empresarial, oferecendo tecnologia simples, intuitiva e eficaz para pequenas e médias empresas.</p>
+        <p>A MEC Sistemas é um representante do Grupo <a class="nav" href="https://www.alterdata.com.br" target="_blank"><strong>Alterdata Software</strong></a>. Sistemas da Alterdata e Prosoft By Alterdata.</p>
     </section>
 
     <section id="produtos" class="section">
         <h3>Produtos</h3>
         <p>Nossos sistemas são criados para facilitar e automatizar processos, economizar tempo e melhorar a organização interna da sua empresa.</p>
+    </section>
+
+    <section id="endereco" class="section">
+        <h3>Estamos em:</h3>
+        <p>Av. Marginal Aniloel Nazareth, 4252 - Jardim Estrela, São José do Rio Preto - SP, 15070-230</p>
     </section>
 
     <!--                                                                                
