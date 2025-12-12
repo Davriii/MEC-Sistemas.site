@@ -21,8 +21,25 @@
                 <a href="#produtos">Produtos</a>
                 <a href="#contato">Contato</a>
             </nav>
+            
+            </div>
+            <!-- BOTÃO MENU HAMBÚRGUER (MOBILE) -->
+            <div class="hamburger" onclick="toggleMenu()">
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+
+        </div>
+
+        <!-- MENU MOBILE DROPDOWN -->
+        <div class="mobile-menu" id="mobileMenu">
+            <a href="#empresa">Empresa</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#contato">Contato</a>
         </div>
     </header>
+    
 
     <section class="hero">
         <div class="hero-text">
@@ -52,6 +69,14 @@
     <footer>
         <p>© 2025 MEC Sistemas — Todos os direitos reservados.</p>
     </footer>
+
+    <!-- SCRIPT DO MENU MOBILE -->
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById("mobileMenu");
+            menu.classList.toggle("open");
+        }
+    </script>
 
 </body>
 </html>

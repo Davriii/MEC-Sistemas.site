@@ -97,3 +97,42 @@ footer {
   text-align: center;
   color: #555;
 }
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+  /* Esconde menu normal */
+  .menu {
+      display: none;
+  }
+
+  /* Mostra menu hambúrguer */
+  .hamburger {
+      display: flex;
+  }
+}
+
+/* MENU MOBILE (ESCONDIDO) */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background: #0a4da3;
+  padding: 10px 0;
+}
+
+.mobile-menu a {
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  background: #063776;
+}
+
+/* MENU MOBILE ABERTO */
+.mobile-menu.open {
+  display: flex;
+}
