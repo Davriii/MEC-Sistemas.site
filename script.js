@@ -96,9 +96,9 @@ document.addEventListener('DOMContentLoaded', function() {
 // ========================================
 // CONTADOR ANIMADO (OPCIONAL - ADICIONE ONDE QUISER)
 // ========================================
-function animateCounter(element, target, duration = 2000) {
+function animateCounter(element, target, duration = 1700) {
     let start = 0;
-    const increment = target / (duration / 16);
+    const increment = target / (duration / 12);
     
     const timer = setInterval(() => {
         start += increment;
@@ -112,14 +112,14 @@ function animateCounter(element, target, duration = 2000) {
 }
 
 // Exemplo de uso do contador (descomente para usar):
-/*
+
 document.addEventListener('DOMContentLoaded', function() {
     const counterElement = document.getElementById('anos-experiencia');
     if (counterElement) {
         animateCounter(counterElement, 20);
     }
 });
-*/
+
 
 // ========================================
 // PREVENÇÃO DE MENU MOBILE FICAR ABERTO AO REDIMENSIONAR
