@@ -226,6 +226,71 @@ a:hover {
 }
 
 /* ---------- SEÇÃO CONTATO ---------- */
+#contato {
+  transition: background-color 0.6s ease;
+}
+
+#contato.highlight {
+  background-color: #e3f2fd;
+  border-radius: 15px;
+}
+
+/* ---------- SEÇÃO SERVIÇOS ---------- */
+.servicos-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.servico-card {
+  background: white;
+  padding: 40px 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+  text-align: center;
+}
+
+.servico-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+}
+
+.servico-icon {
+  font-size: 4rem;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.servico-card:hover .servico-icon {
+  transform: scale(1.2);
+}
+
+.servico-card h4 {
+  color: #0a4da3;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.servico-card p {
+  color: #666;
+  font-size: 0.95rem;
+}
+
+/* Responsivo para serviços */
+@media (max-width: 1024px) {
+  .servicos-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .servicos-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .contact-item {
   display: flex;
   align-items: center;
@@ -247,12 +312,12 @@ a:hover {
 }
 
 .icons:hover {
-  transform: scale(1.3) /*rotate(360deg); (ROTACIONAR PODE SER MUITO) */;
+  transform: scale(1.3) /*rotate(360deg);(rotacionar 360 graus)*/;
 }
 
 /* ---------- FOOTER ---------- */
 footer {
-  background: linear-gradient(135deg, #6799da, #1a73e8);
+  background: linear-gradient(135deg, #0a4da3, #1a73e8);
   color: white;
   padding: 30px 20px;
   text-align: center;

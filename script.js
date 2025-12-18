@@ -63,6 +63,16 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 top: targetPosition,
                 behavior: 'smooth'
             });
+            
+            // Adiciona destaque azul se for a seção de contato
+            if (targetId === '#contato') {
+                targetElement.classList.add('highlight');
+                
+                // Remove o destaque após 3 segundos
+                setTimeout(() => {
+                    targetElement.classList.remove('highlight');
+                }, 3000);
+            }
         }
     });
 });
@@ -93,12 +103,12 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 });
 
-// ========================================
-// CONTADOR ANIMADO (OPCIONAL - ADICIONE ONDE QUISER)
-// ========================================
-function animateCounter(element, target, duration = 1700) {
+
+// CONTADOR ANIMADO 
+
+function animateCounter(element, target, duration = 1500) {
     let start = 0;
-    const increment = target / (duration / 12);
+    const increment = target / (duration / 16);
     
     const timer = setInterval(() => {
         start += increment;
@@ -111,7 +121,7 @@ function animateCounter(element, target, duration = 1700) {
     }, 16);
 }
 
-// Exemplo de uso do contador (descomente para usar):
+//CONTADOR 20 ANOS DE EXPERIÊNCIA
 
 document.addEventListener('DOMContentLoaded', function() {
     const counterElement = document.getElementById('anos-experiencia');

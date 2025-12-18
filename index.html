@@ -20,6 +20,7 @@
             <!-- MENU DESKTOP -->
             <nav class="menu">  
                 <a class="menu-link" href="#empresa">Empresa</a>
+                <a class="menu-link" href="#servicos">Produtos</a>
                 <a class="menu-link" href="#contato">Contato</a>
                 <a class="menu-link" href="#endereco">Endereço</a>
             </nav>
@@ -36,6 +37,7 @@
         <!-- MENU MOBILE DROPDOWN -->
         <div class="mobile-menu" id="mobileMenu">
             <a href="#empresa" onclick="toggleMenu()">Empresa</a>
+            <a href="#servicos" onclick="toggleMenu()">Produtos</a>
             <a href="#contato" onclick="toggleMenu()">Contato</a>
             <a href="#endereco" onclick="toggleMenu()">Endereço</a>
         </div>
@@ -46,7 +48,7 @@
 
     <section class="hero">
         <div class="hero-text">
-            <h2 class="hero-title">Atendendo empreendedores há mais de <strong id="anos-experiencia" style="color: lightskyblue;">20</strong> anos!</h2>
+            <h2 class="hero-title">Atendendo empreendedores há mais de <strong id="anos-experiencia" style="color: rgb(27, 225, 57);">20</strong> anos!</h2>
             <p class="hero-subtitle">Oferecendo sistemas para gestão contábil, financeira e empresarial.</p>
             <a href="#contato" class="btn hero-btn">Entrar em Contato</a>
         </div>
@@ -72,6 +74,38 @@
             </div>
         </div>
     </section>
+
+    <!-- NOVA SEÇÃO: NOSSOS SERVIÇOS -->
+    <section id="servicos" class="section fade-in" style="background-color: #f8f9fa;">
+        <h3>Nossos Produtos</h3>
+        <p style="margin-bottom: 40px;">Soluções completas para sua empresa</p>
+        
+        <div class="servicos-grid">
+            <div class="servico-card">
+                <div class="servico-icon">📊</div>
+                <h4>Contabilidade</h4>
+                <p>Gestão contábil completa e eficiente</p>
+            </div>
+
+            <div class="servico-card">
+                <div class="servico-icon">📋</div>
+                <h4>Departamento Fiscal</h4>
+                <p>Controle fiscal e tributário</p>
+            </div>
+
+            <div class="servico-card">
+                <div class="servico-icon">👥</div>
+                <h4>Departamento Pessoal</h4>
+                <p>Gestão de recursos humanos</p>
+            </div>
+
+            <div class="servico-card">
+                <div class="servico-icon">💼</div>
+                <h4>Sistemas ERP</h4>
+                <p>Integração total dos processos</p>
+            </div>
+        </div>
+    </section>
     
     <section id="contato" class="section fade-in">  
         <h3>Fale Conosco</h3>
@@ -87,6 +121,11 @@
                 <img class="icons" src="whatsapp.png" alt="WhatsApp">
             </a>
             <strong>(17) 99225-0660</strong>
+        </div>
+
+        <div class="contact-item">
+            <img class="icons" src="mailboxblue.png" alt="Telefone">
+            <strong>contato@mecsistemas.net.br</strong>
         </div>
 
         <div class="contact-item">
